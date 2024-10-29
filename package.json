@@ -5,21 +5,15 @@
   "type": "module",
   "proxy": "http://localhost:5000",
   "scripts": {
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "crypto-js": "^4.2.0",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "gsap": "^3.12.5",
     "ngrok": "^5.0.0-beta.2",
-    "nodemailer": "^6.9.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-pageflip": "^2.0.3",
