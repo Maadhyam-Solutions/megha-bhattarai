@@ -1,26 +1,14 @@
 import './hero.css';
 import HTMLFlipBook from 'react-pageflip';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 export default function Hero() {
     const book = useRef();
-    const [currentPage, setCurrentPage] = useState(0); // Track the current page
-    const [isMobile, setIsMobile] = useState(false); // State to check if it's mobile
+   let currentPage = 0; // Track the current page
     const totalPages = 3; // Update this if you add more pages
 
     // Effect to check the screen size
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 700); // Adjust the breakpoint as needed
-        };
-
-        handleResize(); // Check on mount
-        window.addEventListener('resize', handleResize);
-        
-        return () => {
-            window.removeEventListener('resize', handleResize); 
-        };
-    }, []);
+   
 
     const handlePageFlip = () => {
         if (currentPage < totalPages - 1) {
@@ -32,7 +20,6 @@ export default function Hero() {
             book.current.pageFlip().flipPrev();
             currentPage -= 1;
         }
-        setCurrentPage(currentPage);
     };
 
     return (
