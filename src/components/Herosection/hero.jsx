@@ -47,13 +47,13 @@ export default function Hero() {
                         maxShadowOpacity={0.2}
                     >
                         <div className="demoPage">
-                            <img className='imgName' src="src/assets/bookCover.png" alt="bookCover" />
+                            <img className='imgName' src="assets/bookCover.png" alt="bookCover" />
                         </div>
                         <div className="demoPage">
-                            <img className='imgName' src="src/assets/page2.png" alt="page1" />
+                            <img className='imgName' src="assets/page2.png" alt="page1" />
                         </div>
                         <div className="demoPage">
-                            <img className='imgName' src="src/assets/page1.png" alt="page2" />
+                            <img className='imgName' src="assets/page1.png" alt="page2" />
                         </div>
                     </HTMLFlipBook>
                 </div>

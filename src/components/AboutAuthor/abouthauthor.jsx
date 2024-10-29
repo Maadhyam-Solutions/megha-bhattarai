@@ -8,7 +8,7 @@ export default function AboutAuthor() {
                 <h2 className="authorH2">Megha's Story</h2>
             </div>
             <div className="storySection">
-                <img src="/src/assets/meghadp.png" alt='megha profile picture' className='authorImg' />
+                <img src="assets/meghadp.png" alt='megha profile picture' className='authorImg' />
                 <div className='storyPara'>
                     <p>Megha is a passionate writer whose love for words began at a young age. Always drawn to the beauty of emotions, she started expressing herself through poetry, finding comfort in weaving together thoughts and feelings. She believes in the power of vulnerability and strives to create a space where readers can feel seen, understood, and connected through her words.
                             <br/>

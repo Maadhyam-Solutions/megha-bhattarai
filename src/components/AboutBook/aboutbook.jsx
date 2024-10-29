@@ -5,7 +5,7 @@ export default function AboutBook() {
     return (
         <section id="book"  className='about-section'>
             <div className='decorative-flower'>
-                <img className='flower-icon' src="src/assets/flower.png" alt="Decorative Flower" />
+                <img className='flower-icon' src="assets/flower.png" alt="Decorative Flower" />
             </div>
 
             <div className='content-wrapper'>
