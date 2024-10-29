@@ -13,6 +13,7 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:5000', // Backend server URL
       'base': "/megha-bhattarai",
+
     },
   },
 });
