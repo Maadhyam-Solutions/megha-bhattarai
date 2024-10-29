@@ -11,6 +11,7 @@
 
 @media (max-width: 768px) {
     .buyMyBookBtn { 
+        color: white;
         margin-top: 1rem;
         font-family: "DM Serif Display", serif;
     
