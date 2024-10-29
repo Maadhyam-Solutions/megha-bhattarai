@@ -1,5 +1,8 @@
 # Personal Portfolio Website for Megha and her book - Bagaicha
 
-Used: 
+Built the website using:
 React.js: A JavaScript library for building user interfaces.
-HTMLFlipBook: A React component that enables smooth page-flipping animations.
+CSS: To style the website and make it responsive. 
+HTMLFlipBook: A package that enables smooth page-flipping animations for the hero section. 
+
+
