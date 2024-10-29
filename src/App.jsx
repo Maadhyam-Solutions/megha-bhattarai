@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+
 import NavBar from './components/NavBar/navbar'
 import Hero from './components/Herosection/hero'
 import AboutAuthor from './components/AboutAuthor/abouthauthor'
