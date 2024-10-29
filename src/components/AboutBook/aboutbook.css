@@ -1,0 +1,96 @@
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(200deg, #596C59, #596C59);
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 1rem auto;
+    height: auto;
+    min-height: 30vh;
+}
+
+.title {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #f1f8e9;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.description {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+
+}
+
+.decorative-flower {
+    animation: float 8s ease-in-out infinite;
+}
+
+.flower-icon {
+    width: 20em;
+    height: 30em;
+}
+
+
+/* Responsive Design Adjustments */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        margin: 1em;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        text-align: center;
+        max-width: 100%;
+        background: transparent;
+        color: #c8375b ;
+    }
+
+    .title {
+        color: #596C59;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .flower-icon {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        margin: 1em;
+        background: transparent;
+        color: #c8375b;
+        padding: 1rem;
+        max-width: 100%;
+    }
+    .title {
+        color: #596C59;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .description {
+        font-size: 1em;
+        margin-bottom: 1.5rem;
+    }
+    .flower-icon {
+        display: none;
+    }
+}
+
+
+/* Adjustments for screen sizes between 800px and 1350px */
+

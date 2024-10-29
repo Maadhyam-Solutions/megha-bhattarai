@@ -1,0 +1,143 @@
+
+.heroSection {
+    padding-top: 0; /* Ensure no extra space at the top */
+}
+
+
+
+.heroDiv {
+    display: flex;
+    justify-content: space-around; /* Keeps title and book on either side */
+    align-items: center; /* Centers the book and title vertically */
+    margin-top: 3em; /* You can adjust this based on design preferences */
+    padding: 0 4em;
+}
+
+.leftSide {
+    flex-basis: 30%; /* Adjusts width for the title */
+    text-align: left;
+    margin-left: 3em; /* Aligns the title closer to the logo */
+}
+
+.rightSide {
+    flex-basis: 50%; /* Adjusts width for the book */
+    display: flex;
+    justify-content: flex-start; /* Keeps image aligned to the left */
+}
+
+.imgName {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.bagaichaTitle {
+    font-size: 5em; /* Reduces font size slightly */
+    margin: 0; /* Prevents extra spacing from margins */
+    color: #596C59;
+    font-family: "DM Serif Display", serif;
+}
+
+.bagaichaKoDown {
+    margin-top: 1em;
+    text-align: left;
+    color: #7F8C82;
+}
+
+.ctaButton { 
+    background-color: #c8375b;
+    color: #D6DDCE;
+    padding: 0.6em 1.2em;
+    border-radius: 3em;
+    transition: 1s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.ctaButton:hover {
+    color: #D6DDCE;
+    padding: 1em;
+    transition: 1s;
+}
+
+
+/* For smaller screens */
+@media (max-width: 850px) {
+    .heroDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .leftSide {
+        flex-basis: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .bagaichaTitle {
+        font-size: 5rem;
+        margin-top: 4rem;
+    }
+
+    .imgName {
+        max-width: 300px;
+    }
+
+    .bagaichaKoDown {
+        text-align: center;
+    }
+
+    .br1 {
+        display: none;
+    }
+
+    .br2 {
+        display:none;
+    }
+}
+
+
+/* For screens between 700px and 1200px */
+@media (min-width: 850px) and (max-width: 1330px) {
+    .heroDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .leftSide {
+        flex-basis: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .bagaichaKoDown {
+        text-align: center;
+    }
+
+    .br2 {
+        display: none;
+    }
+
+}

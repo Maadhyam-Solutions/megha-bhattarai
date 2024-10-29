@@ -1,0 +1,73 @@
+.authorH2 { 
+    font-family: "DM Serif Display", serif;
+    font-size: 3em; /* Slightly smaller for better fit */
+    color: #596C59;
+}
+
+.authorSection { 
+    margin: 2em;
+    border-radius: 10px;
+    padding: 1em; /* Add padding for better spacing */
+}
+
+.storySection { 
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row; /* Default to row for larger screens */
+    justify-content: space-around;
+    align-items: center; /* Align items at the start */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.authorImg {
+    width: 100%;
+    max-width: 400px; /* Reduce max width for smaller screens */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 1em;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.1);
+}
+
+.storyPara { 
+    width: 100%; /* Full width on small screens */
+    max-width: 800px; /* Limit width on larger screens */
+    margin: 1em; /* Adjust margin for smaller spacing */
+    color: #596C59;
+}
+
+.aboutSection {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) { 
+    .authorH2 {
+        font-size: 2.5em; /* Reduce font size for tablets */
+    }
+
+    .storySection { 
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center; /* Center align */
+    }
+
+    .storyPara {
+        width: 90%; /* Slightly narrower for better fitting */
+        max-width: none; /* Remove max width */
+    }
+}
+
+@media (max-width: 480px) { 
+    .authorH2 {
+        font-size: 2em; /* Further reduce font size for mobile */
+    }
+}

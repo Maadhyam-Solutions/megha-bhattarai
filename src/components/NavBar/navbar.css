@@ -1,0 +1,34 @@
+.navbar {
+    height: 5rem;
+    width: double.infinity; /* Change this */
+    max-width: 100rem; /* Correct the typo */
+    margin: 2rem auto;
+    padding: 1rem 2rem; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+}
+
+nav { 
+    margin-top: 2em;
+}
+
+.logo { 
+    object-fit: cover;
+    height: 4rem;
+    width: 3rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: 0;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-center; /* Align the items to the left */
+        padding: 1rem; /* Adjust padding */
+    }
+    .desktopNavBarItem {
+        padding: 0.5rem 0; /* Reduce padding for mobile */
+        font-size: 1rem; /* Adjust text size for mobile */
+    }
+}

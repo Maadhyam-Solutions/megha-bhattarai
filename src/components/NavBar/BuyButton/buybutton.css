@@ -1,0 +1,18 @@
+
+.topMenuBtnImg{ 
+    height: 1rem;
+    width: 2rem;
+}
+
+.buyMyBookBtn
+{
+    background-color: #c8375b;
+}
+
+@media (max-width: 768px) {
+    .buyMyBookBtn { 
+        margin-top: 1rem;
+        font-family: "DM Serif Display", serif;
+    
+    }
+}

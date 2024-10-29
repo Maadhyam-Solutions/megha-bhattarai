@@ -1,0 +1,11 @@
+
+.desktopNavBarItem { 
+    padding: 1rem;
+    cursor: pointer;
+    color: #c8375b; 
+}
+
+.desktopNavBarItem:hover { 
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #c8375b;
+}
