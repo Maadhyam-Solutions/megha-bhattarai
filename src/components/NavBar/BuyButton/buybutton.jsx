@@ -3,7 +3,7 @@ import './buybutton.css'
 
 export default function BuyButton() {
   const handleClick = () => {
-    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSerh9UFtYsiE5ixmDh51ZJ0lNq1ceXednb6AXEXO11ZkGvqNQ/viewform';
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSerh9UFtYsiE5ixmDh51ZJ0lNq1ceXednb6AXEXO11ZkGvqNQ/viewform', '_blank');
   };
   return (
     <div>
