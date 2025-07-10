@@ -1,14 +1,24 @@
 import './hero.css';
 import HTMLFlipBook from 'react-pageflip';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Hero() {
     const book = useRef();
-   let currentPage = 0; // Track the current page
+    const [isMobile, setIsMobile] = useState(false);
+    let currentPage = 0; // Track the current page
     const totalPages = 3; // Update this if you add more pages
 
     // Effect to check the screen size
-   
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
 
     const handlePageFlip = () => {
         if (currentPage < totalPages - 1) {
@@ -21,6 +31,19 @@ export default function Hero() {
             currentPage -= 1;
         }
     };
+
+    // Responsive dimensions for the flip book
+    const getBookDimensions = () => {
+        if (isMobile) {
+            return { width: 200, height: 320 };
+        } else if (window.innerWidth <= 850) {
+            return { width: 250, height: 400 };
+        } else {
+            return { width: 300, height: 480 };
+        }
+    };
+
+    const dimensions = getBookDimensions();
 
     return (
         <section className='heroSection'>
@@ -38,13 +61,14 @@ export default function Hero() {
                 </div>
                 <div className='rightSide'>
                     <HTMLFlipBook 
-                        useMouseEvents={false} 
+                        useMouseEvents={!isMobile} 
                         ref={book} 
-                        width={300} 
-                        height={480} 
+                        width={dimensions.width} 
+                        height={dimensions.height} 
                         showCover={true} 
                         flippingTime={2000} 
                         maxShadowOpacity={0.2}
+                        className="responsive-flipbook"
                     >
                         <div className="demoPage">
                             <img className='imgName' src="assets/bookCover.png" alt="bookCover" />
